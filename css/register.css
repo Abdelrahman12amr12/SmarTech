@@ -1,0 +1,215 @@
+:root {
+  --maincolor: #0eab06;
+  --iconcolor: rgb(90, 92, 94);
+  --headertextcolor: #aeb2b0;
+  --headercolor: #f8f9fb;
+  --boxcolor: #f1f3f2;
+  --textcolor: #535558;
+  --formlablecolor: #2a2c2b;
+  --viweportcolor: #ffffff;
+  --btn: #cbcbcb;
+}
+body {
+  height: 100%;
+}
+ /*
+.container {
+  border: salmon 1px solid; 
+}*/
+.navbar {
+  /* border: saddlebrown 1px solid; */
+  background-color: var(--headercolor);
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+/* .logo {
+  /* border: saddlebrown 1px solid;} */
+
+.socialmedia {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: end;
+  gap: 7px;
+  padding: 3.5px;
+  /* grid  */
+  /* display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  align-content: center;
+  justify-content: end;
+  gap: 7px; */
+  /* border: sandybrown 1px solid; */
+}
+.navbar_login {
+  text-decoration: none;
+  color: var(--headertextcolor);
+  padding: 10px;
+}
+.navbarmenuicon {
+  display: none;
+  /* visibility: hidden; */
+}
+.navbar_register {
+  text-decoration: none;
+  color: var(--headertextcolor);
+  padding: 10px;
+}
+
+.navbar_login:hover,
+.navbar_register:hover,
+.registerbtn:hover {
+  border: 1px solid var(--maincolor);
+  background-color: var(--maincolor);
+  border-radius: 7px;
+  padding: 10px;
+  color: white;
+  /* color: #98f98f; */
+}
+
+/* nav bar^ */
+.register {
+  background-color: var(--viweportcolor);
+  /* border: sandybrown 16px solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*  %? */
+  height: 100vh;
+  /* position: relative; */
+}
+
+.formcontainer {
+  width: 70%;
+  /* height: 77%; */
+  max-width: 700px;
+  min-width: none;
+  padding: 20px;
+  background-color: var(--boxcolor);
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for better aesthetics */
+  position: relative;
+  /* background-color: #0eab06; */
+  /* border: sandybrown 1px solid; */
+}
+.formcontainer > form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* border: sandybrown 1px solid; */
+}
+.formcontainer > form > label {
+  font-size: 16px;
+  /* color: #f1f3f2; */
+  /* color: #0eab06; */
+  color: var(--formlablecolor);
+}
+.formcontainer > form > input {
+  padding: 7px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+.formcontainer > p {
+  font-size: xx-large;
+  color: var(--formlablecolor);
+}
+.registercontainer {
+  text-align: end;
+}
+.registerbtn {
+  border: none 1px solid;
+  border-radius: 7px;
+  text-decoration: none;
+  color: white;
+  /* color: rgb(90, 92, 94); */
+  padding: 10px;
+  cursor: pointer;
+  background-color: var(--btn);
+  /* margin: 20px 16px 0 0;
+  display: flex;
+  justify-self: flex-end;
+  position: absolute;
+  left: 500px;
+  bottom: -2px; */
+  /* text-align: end; */
+}
+/* register ^ */
+/* .footer {
+  /* border: sandybrown 1px solid; */
+
+.footercontent {
+  /* border: saddlebrown 1px solid; */
+  display: flex;
+  height: 177px;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+/* responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100%;
+  }
+  .socialmedia {
+    display: none;
+  }
+
+  .navbarmenuicon {
+    display: inline-block; /* Make the menu icon visible */
+    cursor: pointer;
+  }
+
+  .navbarmenuicon:hover ~ .socialmedia {
+    display: flex;
+    flex-direction: column;
+    gap: 7px; /* Adjust spacing */
+    /* border: 1px solid saddlebrown; */
+  }
+
+  .navbar_login,
+  .navbar_register {
+    display: block; /* Ensure these links are visible */
+    margin: 10px 0; /* Add some spacing */
+    text-align: center;
+  }
+
+  .container {
+    padding: 7px; /* Adjust padding for smaller screens */
+  }
+
+  .register {
+    width: 100%; /*Ensure the form spans the available width */
+    padding: 15px;
+  }
+
+  .registerbtn:hover {
+    background-color: var(--maincolor); /* Keep hover effects consistent */
+  }
+  .register {
+    height: 100%;
+  }
+  .formcontainer {
+    width: 70%;
+    height: 80%;
+  }
+  /* .loginformcontainer > form > input {
+  }
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+}

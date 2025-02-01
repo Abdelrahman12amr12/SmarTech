@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="../CSS/cartStyle.css" />
+    <!-- Normalize File -->
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../CSS/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="../images/cartcion.png" />
+    <!-- Google Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+  </head>
+  <body>
+    <!-- ! navbar -->
+    <div class="navbar">
+      <div class="logo">
+        <img src="../images/image1.png" alt="" />
+      </div>
+      <img
+        src="../images/image2.png"
+        alt=""
+        class="navbarmenuicon"
+      />
+      <div class="socialmedia">
+        <a href="https://www.instagram.com/">
+          <i class="fa-brands fa-instagram" style="color: #5a5c5e"></i
+        ></a>
+        <a href="https://www.facebook.com//"
+          ><i class="fa-brands fa-facebook" style="color: #5a5c5e"></i
+        ></a>
+        <a href=" https://www.tiktok.com/login">
+          <i class="fa-brands fa-tiktok" style="color: #5a5c5e"></i
+        ></a>
+        <a href="https://x.com/?lang=en">
+          <i class="fa-brands fa-twitter" style="color: #5a5c5e"></i
+        ></a>
+        <a href="https://www.linkedin.com/">
+          <i class="fa-brands fa-linkedin-in" style="color: #5a5c5e"></i
+        ></a>
+        <a href="https://www.youtube.com/">
+          <i class="fa-brands fa-youtube" style="color: #5a5c5e"></i
+        ></a>
+        <a href="../html/home.html" class="navbar_products">Home</a>
+        <a href="../html/products.html" class="navbar_products">Products</a>
+        <a href="../html/index.html" class="navbar_SignOut">SignOut</a>
+      </div>
+    </div>
+    <!-- ! end navbar -->
+    <div class="cart-container">
+      <div class="cart-title">Shop Cart</div>
+      <div class="cart-total">Total Price: EGP 946.00</div>
+
+      <div class="cart-item">
+        <div class="item-info">
+          <img src="../Images/Pic1.png" alt="Woman Shawl" class="item-image" />
+          <div class="item-details">
+            <div class="item-title">Woman Shawl</div>
+            <div class="item-price">149.00 EGP</div>
+            <button class="item-remove">
+              <i class="fa-solid fa-trash-can"></i> Remove
+            </button>
+          </div>
+        </div>
+        <div class="quantity-controls">
+          <button>+</button>
+          <span>3</span>
+          <button>-</button>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <div class="item-info">
+          <img
+            src="../Images/pic2.png"
+            alt="Knitted Joggers Lilac"
+            class="item-image"
+          />
+          <div class="item-details">
+            <div class="item-title">Relaxed Fit ff</div>
+            <div class="item-price">499.00 EGP</div>
+            <button class="item-remove">
+              <i class="fa-solid fa-trash-can"></i> Remove
+            </button>
+          </div>
+        </div>
+        <div class="quantity-controls">
+          <button>+</button>
+          <span>1</span>
+          <button>-</button>
+        </div>
+      </div>
+
+      <div class="payment-button">
+        <button>
+          Online Payment
+          <img src="../Images/Visa_Inc._logo.svg" alt="Visa" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
