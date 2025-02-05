@@ -12,7 +12,7 @@
     <div class="container">
       <div class="navbar">
         <div class="logo">
-          <img src="images/image1.png" alt="" />
+          <img src="images/logoo.jpg" alt="" style="height: 35px" />
         </div>
         <img src="images/image2.png" alt="" class="navbarmenuicon" />
         <div class="socialmedia">
@@ -22,8 +22,8 @@
           <a href="https://www.facebook.com//"
             ><i class="fa-brands fa-facebook" style="color: #5a5c5e"></i
           ></a>
-          <a href=" https://www.tiktok.com/login">
-            <i class="fa-brands fa-tiktok" style="color: #5a5c5e"></i
+          <a href=" https://www.tiktok.com/login"
+            ><i class="fa-brands fa-tiktok" style="color: #5a5c5e"></i
           ></a>
           <a href="https://x.com/?lang=en">
             <i class="fa-brands fa-twitter" style="color: #5a5c5e"></i
@@ -34,21 +34,28 @@
           <a href="https://www.youtube.com/">
             <i class="fa-brands fa-youtube" style="color: #5a5c5e"></i
           ></a>
-          <a href="index.html" class="navbar_login">login</a>
+          <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+          <a href="./index.html" class="navbar_login">login</a>
           <a href="html/register.html" class="navbar_register">register</a>
         </div>
       </div>
       <!-- nav bar ^   -->
-      <div class="login">
+      <div class="login" id="logdark">
         <div class="loginformcontainer">
           <p>Login Now</p>
           <form action="">
             <label for="">Email:</label>
-            <input type="email" placeholder="email address" required />
+            <input
+              type="email"
+              placeholder="email address"
+              id="email"
+              required
+            />
             <br />
             <!--  -->
             <label for="">Password</label>
             <input
+              id="password"
               type="password"
               placeholder="please enter your password here"
               required
@@ -57,7 +64,12 @@
             <!--  -->
           </form>
           <div class="logincontainer">
-            <a href="html/home.html" class="loginbtn">login</a>
+            <input
+              type="submit"
+              class="loginbtn"
+              value="login"
+              onclick="check()"
+            />
           </div>
         </div>
       </div>
@@ -68,5 +80,7 @@
       </div>
       <!--  -->
     </div>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

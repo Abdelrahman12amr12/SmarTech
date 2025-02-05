@@ -13,7 +13,7 @@
     <div class="container">
       <div class="navbar">
         <div class="logo">
-          <img src="../images/image1.png" alt="" />
+          <img src="../images/logoo.jpg" alt="" style="height: 35px" />
         </div>
         <img src="../images/image2.png" alt="" class="navbarmenuicon" />
         <div class="socialmedia">
@@ -35,7 +35,7 @@
           <a href="https://www.youtube.com/">
             <i class="fa-brands fa-youtube" style="color: #5a5c5e"></i
           ></a>
-          <a href="./index.html" class="navbar_login">login</a>
+          <a href="../index.html" class="navbar_login">login</a>
           <a href="./register.html" class="navbar_register">register</a>
         </div>
         <div></div>
@@ -48,6 +48,7 @@
           <form action="">
             <label for="">Name: </label>
             <input
+              id="name"
               type="text"
               placeholder="please enter your name here"
               required
@@ -56,6 +57,7 @@
             <!--  -->
             <label for="">email:</label>
             <input
+              id="email"
               type="email"
               placeholder="email address"
               value="example@gmail.com"
@@ -65,6 +67,7 @@
             <!--  -->
             <label for="">Passeword:</label>
             <input
+              id="password"
               type="password"
               name=""
               id=""
@@ -75,6 +78,7 @@
             <!--  -->
             <label for="">rePassword:</label>
             <input
+              id="repassword"
               type="password"
               name=""
               id=""
@@ -87,18 +91,23 @@
             <input
               type="number"
               name=""
-              id=""
+              id="phone"
               placeholder="please enter your phone number here"
               required
             />
             <br />
           </form>
           <div class="registercontainer">
-            <a href="#" class="registerbtn">register</a>
+            <input
+              type="submit"
+              class="registerbtn"
+              value="register"
+              onclick="save()"
+            />
           </div>
         </div>
       </div>
-      <!--  -->
+      <!---->
       <!-- register^ -->
       <div class="footer">
         <div class="footercontent">
@@ -106,5 +115,7 @@
         </div>
       </div>
     </div>
+    <script src="../js/index.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
