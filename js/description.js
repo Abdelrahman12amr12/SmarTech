@@ -22,7 +22,7 @@ const products = [
   {
     id: "3",
     name: "Airpods Pro 2",
-    price: "EGP 299.00",
+    price: "USD 299.00",
     image: "../images/airpods.png",
     link: "../html/description.html?product=3",
     description: "AirPods Pro (2nd generation) with Active Noise Cancellation.",
@@ -31,7 +31,7 @@ const products = [
   {
     id: "4",
     name: "Apple watch series 10 45mm",
-    price: "EGP 299.00",
+    price: "USD 299.00",
     image: "../images/applewatch.jpg",
     link: "../html/description.html?product=4",
     description:
